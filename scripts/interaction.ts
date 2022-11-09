@@ -6,6 +6,9 @@ async function main() {
     
     const createVote = await contractInter.createVote("President", 7, "https://source.unsplash.com/mkTqZN1NzhY/640x960", "Obi Peters or Tinubu or Atiku");
     console.log("Create your vote" ,createVote);
+    
+    const vote = await contractInter.Vote(1, 2);
+    console.log("Voting my choice" ,vote);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
