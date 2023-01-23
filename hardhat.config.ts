@@ -8,9 +8,9 @@ const config: HardhatUserConfig = {
   solidity: "0.8.9",
   networks: {
     goerli: {
-      url: process.env.QUICKNODE_GOERLI_API_KEY,
+      url: process.env.QUICKNODE,
       // @ts-ignore
-      accounts: [process.env.PRIVATE_KEY]
+      accounts: [process.env.PRIVATE_KEY_1]
     }
   },
   etherscan: {
